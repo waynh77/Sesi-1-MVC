@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Product>
+
+<h2>Daftar Produk</h2>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item.Id - @item.Name - @item.Qty</li>
+    }
+</ul>
